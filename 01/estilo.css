@@ -1,0 +1,16 @@
+body {
+  background: #333;
+  color: #fff;
+}
+
+.teste {
+  background: red;
+  width: 100px;
+  height: 100px;
+}
+
+#teste {
+  background: blue;
+  width: 100px;
+  height: 100px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Manipulação do DOM em JavaScript</title>
+</head>
+<body>
+  <h1 id="titulo">Título Original</h1>
+  <p id="paragrafo">Este é um parágrafo.</p>
+
+  <button onclick="alterarConteudo()">Alterar Título</button>
+  <button onclick="adicionarElemento()">Adicionar Novo Parágrafo</button>
+
+  <script>
+    // Função para alterar o conteúdo do título
+    function alterarConteudo() {
+      // Seleciona o elemento com o id "titulo"
+      const tituloElemento = document.getElementById("titulo");
+      
+      // Altera o conteúdo do título
+      tituloElemento.textContent = "Novo Título Modificado";
+    }
+
+    // Função para adicionar um novo parágrafo ao final do body
+    function adicionarElemento() {
+      // Cria um novo elemento parágrafo
+      const novoParagrafo = document.createElement("p");
+      
+      // Define o conteúdo do novo parágrafo
+      novoParagrafo.textContent = "Novo parágrafo adicionado!";
+      
+      // Adiciona o novo parágrafo ao final do body
+      document.body.appendChild(novoParagrafo);
+    }
+  </script>
+</body>
+</html>

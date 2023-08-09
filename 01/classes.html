@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo de Classe em JavaScript</title>
+</head>
+<body>
+  <h1>Exemplo de Classe em JavaScript</h1>
+  <script>
+    class Pessoa {
+      constructor(nome = "Christian", idade) {
+        this.nome = nome;
+        this.idade = idade;
+      }
+
+      saudacao() {
+        if( this.idade > 25) {
+          console.log("Voce tem mais de 25 anos")
+        }
+        console.log(`Olá, meu nome é ${this.nome} e tenho ${this.idade} anos.`);
+      }
+    }
+
+    // Função que será chamada quando o botão for clicado
+    function exibirSaudacao() {
+      // Criando uma instância da classe Pessoa
+      const pessoa1 = new Pessoa(0);
+      pessoa1.saudacao();
+    }
+  </script>
+
+  <!-- Botão para chamar a função exibirSaudacao() -->
+  <button onclick="exibirSaudacao()">Clique para exibir saudação</button>
+</body>
+</html>
